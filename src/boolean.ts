@@ -4,24 +4,24 @@
 // type out some stuff by hand than do this.
 // Or just use actual JS and type inference instead!
 type BoolsOnly<Type> = {
-  [Property in keyof Type as Type[Property] extends boolean
-    ? Property
-    : never]: Type[Property];
+    [Property in keyof Type as Type[Property] extends boolean
+        ? Property
+        : never]: Type[Property];
 };
 
 type Config = {
-  name: string;
-  active: boolean;
+    name: string;
+    active: boolean;
 };
 
 // Use LSP to check this one out!
 type Flags = BoolsOnly<Config>;
 
 const Demo: Config = {
-  name: "John Smith",
-  active: true,
+    name: "John Smith",
+    active: true,
 };
 
 const Flags: Flags = {
-  active: false,
+    active: false,
 };

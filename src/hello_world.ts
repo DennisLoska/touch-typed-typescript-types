@@ -1,7 +1,7 @@
 type Identity<Type> = Type;
 
 type HelloWorld = {
-  message: string;
+    message: string;
 };
 
 // Just getting in the muscle memory of type parameters!
