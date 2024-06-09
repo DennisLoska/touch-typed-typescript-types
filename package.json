@@ -1,20 +1,20 @@
 {
-  "name": "touch-typed-typescript-types",
-  "type": "module",
-  "version": "1.0.0",
-  "description": "These types are just for muscle memory and not for any real use.",
-  "main": "src/main.ts",
-  "scripts": {
-    "start": "npx vite-node src/main.ts",
-    "format": "npx prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Dennis Loska",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "prettier": "^3.3.0",
-    "typescript": "^5.4.5"
-  }
+    "name": "touch-typed-typescript-types",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "These types are just for muscle memory and not for any real use.",
+    "main": "src/main.ts",
+    "scripts": {
+        "start": "npx vite-node src/main.ts",
+        "format": "npx prettier --write .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Dennis Loska",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.14.2",
+        "prettier": "^3.3.0",
+        "typescript": "^5.4.5"
+    }
 }
