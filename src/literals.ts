@@ -7,7 +7,7 @@ type PasswordRequirements = {
     [key: string]: unknown;
 };
 
-const PasswordConfig: PasswordRequirements = {
+const passwordConfig: PasswordRequirements = {
     characters: "abcdefghijklmnopqrstuvwxyz0123456789!§$%&/()=",
     min: 12,
     salt: 42,
@@ -15,7 +15,7 @@ const PasswordConfig: PasswordRequirements = {
 };
 
 // That's now illegal
-// PasswordConfig.min = 7;
+// passwordConfig.min = 7;
 
 type Suffixer<T, Suffix extends string> = {
     [Property in keyof T]: T[Property] extends string
