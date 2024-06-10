@@ -8,7 +8,7 @@ function isNumber(num: unknown): num is number {
 }
 
 // Right now the compiler would complain - good!
-// 42 + number
+// 42 + lucky
 
 if (isNumber(lucky)) {
     // Now its happy!
