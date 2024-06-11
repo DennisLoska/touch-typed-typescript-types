@@ -112,6 +112,33 @@ class WebMessanger extends SmartMessanger {
 const webMessanger = new WebMessanger("Make the unconscious conscious.", "en");
 webMessanger.send("- Probably Carl Jung")("light")("phone");
 
+// public static void main(String:[...args]){System.out.println("Hello world!");}
+class Boring {
+    private static id = 42;
+
+    static print(message: string) {
+        console.log(`${message} - ${Boring.id} push ups now!`);
+    }
+}
+
+Boring.print("Be uncommon amongs uncommon!");
+// thats illegal btw
+// Boring.id
+
+// instead of using a static class why not just a POJO?
+const boring = {
+    id: 42,
+    print(message: string) {
+        console.log(`${message} - ${this.id} push ups now!`);
+    },
+};
+
+boring.print("This is the way!");
+// this is now legal, but I don't really care!
+// encapsulation is only* relevant when I am a library developer
+// *well, it depends what you mean by library!
+boring.id;
+
 // Alright lets get serious - Arnold after the 9th rep
 // uhhh ahhh it is 9:30 already.
 class TypeMeister<Tasty> {
